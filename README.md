@@ -1,5 +1,7 @@
 # ImageProcessing
 
+## Python
+
 ClusterSeqIP_v1.py will pre-process the 1_original folder images from the Seq run and output processed images in a folder that are ready for ImageJ registration: 
 
 What it does: Image rename, filtering, binning, background normalization, magnification correction 
@@ -15,7 +17,7 @@ Executing Program:
 & C:/Users/.../python.exe ".../ClusterSeqIP_v1.py" -i "/path/to/unprocessed/data"
 ```
 
-## Color Transformation:
+### Color Transformation:
 
 Extract basic metrics from ROIs
 ```bash
@@ -94,8 +96,30 @@ color_transformation.py \
 -o /tmp
 ```
 
-## Dephasing Correction and Basecall:
+### Dephasing Correction and Basecall:
 
 Run default_analysis.sh file in terminal
 
 with “color_transformed_spots.csv” add to the directory path
+
+## MATLAB
+
+ClusterSeqIP_v2_IJauto.m is the matlab version of the image processing code that will complete the entire image processing pipeline:
+
+### Installing:
+
+MATLAB R2020 and above
+
+Download and install [fiji.app](http://fiji.app) [https://imagej.net/software/fiji/](https://imagej.net/software/fiji/)
+
+MATLAB imageJ: mij.jar, ij.jar
+
+Make sure the fiji contains: “…\plugins\Descriptor_based_registration-2.1.8.jar”
+
+### Executing program:
+
+Add mij.jar, ij.jar and Descriptor_based_registration-2.1.8.jar to the script path
+
+ImgFolderPath='Your Raw Image Path Folder'; %Replace this with the folder path of your raw images
+
+Click “Run” button, the processed images will be output in the same directory of your raw image path.
