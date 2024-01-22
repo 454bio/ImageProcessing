@@ -30,7 +30,7 @@ fijipath='...your directory/Fiji.app'
 
 Last, run the file in the terminal with "-i +your_raw_image_folder"
 ```
-& C:/Users/...your directory/python.exe "...your directory/ClusterSeqIP_v2.py" -i "/path/to/unprocessed/raw_image_folder"
+& C:/Users/...your directory/python.exe "...your directory/ClusterSeqIP_v2.py" -i "/your_path_to/raw_image_folder"
 ```
 Python will call fiji algorithm to perform the image registration, requires users to drag the cropping rectangle to center and manually adjust the threshold to ~0.08
 
