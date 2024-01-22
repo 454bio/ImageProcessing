@@ -7,6 +7,7 @@ import numpy as np
 from argparse import ArgumentParser
 from joblib import Parallel, delayed
 os.environ['JAVA_HOME']='C:\Program Files\Microsoft\jdk-11.0.21.9-hotspot'
+fijipath='C:/Users/yujin/OneDrive/Desktop/Fiji.app'
 
 # Define Images tag labeler function
 def Img_Labeler(total_images,image_ext):
@@ -151,7 +152,6 @@ if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 os.chdir(output_folder)
 output_path=os.getcwd()
-fijipath='C:/Users/yujin/OneDrive/Desktop/Fiji.app'
 ij = imagej.init(fijipath,mode='interactive')
 
 #ImageJ registration section
