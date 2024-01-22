@@ -1,19 +1,22 @@
 # ImageProcessing
 
-## Python
+## Using Python
 
-ClusterSeqIP_v1.py will pre-process the 1_original folder images from the Seq run and output processed images in a folder that are ready for ImageJ registration: 
-
-What it does: Image rename, filtering, binning, background normalization, magnification correction 
-
-Installing: 
+### Installation Guide: 
 
 Python 3.9 and above
 
-Libarary: numpy, roifile, matplotlib, opencv, pandas, scipy, scikit-learn, scikit-image
+Libarary: numpy, roifile, matplotlib, opencv, pandas, scipy, scikit-learn, scikit-image, joblib (parallel computing), PyImageJ (which also requires OpenJDK 11 and Maven)
+https://py.imagej.net/en/latest/Install.html
 
+For most of them could use either "conda install numpy" or "pip install pyimagej" in the Anaconda terminal 
+
+ClusterSeqIP_v2.py 
+
+will pre-process the 1_original folder images from the Seq run and output processed images in a folder that are ready for color: 
+What it does: Image rename, filtering, binning, background normalization, magnification correction 
 Executing Program:
-```bash
+```
 & C:/Users/.../python.exe ".../ClusterSeqIP_v1.py" -i "/path/to/unprocessed/data"
 ```
 
