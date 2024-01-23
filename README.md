@@ -59,3 +59,9 @@ First, Add mij.jar, ij.jar and Descriptor_based_registration-2.1.8.jar to the sc
 ImgFolderPath='Your Raw Image Path Folder'; %Replace this with the folder path of your raw images
 
 Click “Run” button, the processed images will be output in the same directory of your raw image path.
+
+## Legal
+
+The attached LICENSE.md solely authorizes the use of the software contained in this repository and provides no other license.
+
+Usage of Lightning Terminators™️ is governed by a separate license provided upon purchase.
